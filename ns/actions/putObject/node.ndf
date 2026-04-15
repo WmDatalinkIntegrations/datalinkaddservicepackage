@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="svc_type">CloudService</value>
+  <value name="svc_subtype">REST</value>
+  <value name="svc_sigtype">unknown</value>
+  <record name="svc_sig" javaclass="com.wm.util.Values">
+    <record name="sig_in" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="wrapper_type">IData</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">putObjectInput</value>
+          <value name="field_type">record</value>
+          <value name="field_dim">0</value>
+          <value name="wrapper_type">IData</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <array name="rec_fields" type="record" depth="1">
+          </array>
+          <value name="modifiable">true</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">unknown</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">$connectionAlias</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">$connection</value>
+          <value name="field_type">record</value>
+          <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
+          <value name="wrapper_type">IData</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <array name="rec_fields" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="node_type">record</value>
+              <value name="node_subtype">unknown</value>
+              <value name="is_public">false</value>
+              <value name="field_name">Connection</value>
+              <value name="field_type">record</value>
+              <value name="field_dim">0</value>
+              <value name="nillable">true</value>
+              <value name="form_qualified">false</value>
+              <value name="is_global">false</value>
+              <array name="rec_fields" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="node_type">unknown</value>
+                  <value name="node_subtype">unknown</value>
+                  <record name="node_hints" javaclass="com.wm.util.Values">
+                    <value name="field_default_value">https://s3.amazonaws.com/</value>
+                  </record>
+                  <value name="is_public">false</value>
+                  <value name="field_name">Server URL</value>
+                  <value name="field_type">string</value>
+                  <value name="field_dim">0</value>
+                  <value name="nillable">true</value>
+                  <value name="form_qualified">false</value>
+                  <value name="is_global">false</value>
+                </record>
+              </array>
+              <value name="modifiable">true</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="node_type">record</value>
+              <value name="node_subtype">unknown</value>
+              <value name="is_public">false</value>
+              <value name="field_name">AWS Signature Version 4</value>
+              <value name="field_type">record</value>
+              <value name="field_dim">0</value>
+              <value name="nillable">true</value>
+              <value name="form_qualified">false</value>
+              <value name="is_global">false</value>
+              <array name="rec_fields" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="node_type">unknown</value>
+                  <value name="node_subtype">unknown</value>
+                  <record name="node_hints" javaclass="com.wm.util.Values">
+                    <value name="field_default_value">AKIAVQBOWJXMUC3QZXM6</value>
+                  </record>
+                  <value name="is_public">false</value>
+                  <value name="field_name">Access Key</value>
+                  <value name="field_type">string</value>
+                  <value name="field_dim">0</value>
+                  <value name="nillable">true</value>
+                  <value name="form_qualified">false</value>
+                  <value name="is_global">false</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="node_type">unknown</value>
+                  <value name="node_subtype">unknown</value>
+                  <record name="node_hints" javaclass="com.wm.util.Values">
+                    <value name="field_password">true</value>
+                  </record>
+                  <value name="is_public">false</value>
+                  <value name="field_name">Secret Key</value>
+                  <value name="field_type">string</value>
+                  <value name="field_dim">0</value>
+                  <value name="nillable">true</value>
+                  <value name="form_qualified">false</value>
+                  <value name="is_global">false</value>
+                </record>
+                <record javaclass="com.wm.util.Values">
+                  <value name="node_type">unknown</value>
+                  <value name="node_subtype">unknown</value>
+                  <record name="node_hints" javaclass="com.wm.util.Values">
+                    <value name="field_default_value">us-west-2</value>
+                  </record>
+                  <value name="is_public">false</value>
+                  <value name="field_name">Region</value>
+                  <value name="field_type">string</value>
+                  <value name="field_dim">0</value>
+                  <value name="field_opt">true</value>
+                  <value name="nillable">true</value>
+                  <value name="form_qualified">false</value>
+                  <value name="is_global">false</value>
+                </record>
+              </array>
+              <value name="modifiable">true</value>
+            </record>
+          </array>
+          <value name="modifiable">true</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+    <record name="sig_out" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="wrapper_type">IData</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">putObjectOutput</value>
+          <value name="field_type">record</value>
+          <value name="field_dim">0</value>
+          <value name="wrapper_type">IData</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <array name="rec_fields" type="record" depth="1">
+          </array>
+          <value name="modifiable">true</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+  </record>
+  <value name="node_comment"></value>
+  <value name="stateless">yes</value>
+  <value name="caching">no</value>
+  <value name="prefetch">no</value>
+  <value name="cache_ttl">15</value>
+  <value name="prefetch_level">1</value>
+  <value name="audit_level">off</value>
+  <value name="check_internal_acls">no</value>
+  <value name="icontext_policy">$null</value>
+  <value name="system_service">no</value>
+  <value name="retry_max">0</value>
+  <value name="retry_interval">0</value>
+  <value name="svc_in_validator_options">none</value>
+  <value name="svc_out_validator_options">none</value>
+  <value name="auditoption">0</value>
+  <null name="auditfields_input"/>
+  <null name="auditfields_output"/>
+  <record name="auditsettings" javaclass="com.wm.util.Values">
+    <value name="document_data">0</value>
+    <value name="startExecution">false</value>
+    <value name="stopExecution">false</value>
+    <value name="onError">true</value>
+  </record>
+  <record name="circuitbreakersettings" javaclass="com.wm.util.Values">
+    <value name="enabled">false</value>
+    <value name="failureEvent">1</value>
+    <value name="timeoutPeriod">60</value>
+    <value name="failureThreshold">5</value>
+    <value name="failurePeriod">60</value>
+    <value name="openAction">1</value>
+    <value name="serviceToInvoke"></value>
+    <value name="resetPeriod">300</value>
+    <value name="cancelThreadOnTimeout">false</value>
+  </record>
+  <record name="concurrentrequestlimitsettings" javaclass="com.wm.util.Values">
+    <value name="maxConcurrentRequests">20</value>
+    <value name="concurrentRequestLimitEnabled">false</value>
+  </record>
+  <array name="allowedHTTPMethods" type="value" depth="1">
+    <value>TRACE</value>
+    <value>HEAD</value>
+    <value>DELETE</value>
+    <value>POST</value>
+    <value>GET</value>
+    <value>OPTIONS</value>
+    <value>PUT</value>
+    <value>PATCH</value>
+  </array>
+  <value name="pipeline_option">1</value>
+  <null name="originURI"/>
+  <value name="modifiable">true</value>
+  <value name="is_public">false</value>
+  <value name="node_type">service</value>
+  <value name="cloudNodeVersion">1</value>
+  <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
+    <null name="interactionName"/>
+    <value name="serviceName">AmazonS3RestService</value>
+    <null name="throwExceptionOnError"/>
+    <value name="virtualServiceName">WmCloudStreams.RestVS</value>
+    <value name="connectionName">connections:s3Aritra</value>
+    <value name="connectionType">sagcloud</value>
+    <value name="connectorID">com.softwareag.cloudstreams.amazon.s3.aws4_v20060301</value>
+    <record name="customData" javaclass="com.wm.util.Values">
+      <array name="customInputHeaders" type="record" depth="1">
+      </array>
+      <array name="customOutputHeaders" type="record" depth="1">
+      </array>
+      <array name="customParameters" type="record" depth="1">
+      </array>
+      <array name="customConnection" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Connection</value>
+          <value name="groupType">connection</value>
+          <array name="fields" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Server URL</value>
+              <value name="propertyKey">cn.providerUrl</value>
+              <value name="defaultValue">https://s3.amazonaws.com/</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">https://s3.amazonaws.com/</value>
+              <value name="schemaType">anyURI</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">true</Boolean>
+              <value name="modelType">Basic</value>
+              <value name="isDynamic">true</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Socket Read Timeout</value>
+              <value name="propertyKey">cn.readTimeout</value>
+              <value name="defaultValue">30000</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">30000</value>
+              <value name="schemaType">int</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Connection Retry Count</value>
+              <value name="propertyKey">cn.retryCount</value>
+              <value name="defaultValue">4</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">4</value>
+              <value name="schemaType">int</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Retry on Response Failure</value>
+              <value name="propertyKey">cn.retryIfRequestSentOk</value>
+              <value name="defaultValue">true</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">true</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Proxy Server Alias</value>
+              <value name="propertyKey">cn.webproxyAlias</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue"></value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Trust store Alias</value>
+              <value name="propertyKey">cn.truststoreAlias</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue"></value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Keystore Alias</value>
+              <value name="propertyKey">cn.keystoreAlias</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue"></value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Client Key Alias</value>
+              <value name="propertyKey">cn.clientKeyAlias</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue"></value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Hostname verifier</value>
+              <value name="propertyKey">cn.hostnameVerifier</value>
+              <value name="defaultValue">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <array name="allowedValues" type="value" depth="1">
+                <value>org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+                <value>org.apache.http.conn.ssl.NoopHostnameVerifier</value>
+              </array>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Enable Compression</value>
+              <value name="propertyKey">cn.enableCompression</value>
+              <value name="defaultValue">false</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">false</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Enable SNI</value>
+              <value name="propertyKey">cn.enableSNI</value>
+              <value name="defaultValue">true</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">true</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">SNI Server Name</value>
+              <value name="propertyKey">cn.sniServerName</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue"></value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+          </array>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Transport Protocol</value>
+          <value name="groupType">protocol</value>
+          <array name="fields" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Use Expect Continue</value>
+              <value name="propertyKey">pr.useExpectCont</value>
+              <value name="defaultValue">true</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">true</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Use Chunking</value>
+              <value name="propertyKey">pr.useChunking</value>
+              <value name="defaultValue">false</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">false</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Follow Server Redirects</value>
+              <value name="propertyKey">pr.followServerRedirects</value>
+              <value name="defaultValue">true</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">true</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Allow Circular Redirects</value>
+              <value name="propertyKey">pr.allowCircularRedirects</value>
+              <value name="defaultValue">true</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">true</value>
+              <value name="schemaType">boolean</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Server Redirect Maximum Tries</value>
+              <value name="propertyKey">pr.serverRedirectMax</value>
+              <value name="defaultValue">5</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">5</value>
+              <value name="schemaType">int</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Advanced</value>
+              <value name="isDynamic">false</value>
+            </record>
+          </array>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">AWS Signature Version 4</value>
+          <value name="groupType">aws_v4</value>
+          <array name="fields" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Access Key</value>
+              <value name="propertyKey">aws.accessKey</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">AKIAVQBOWJXMUC3QZXM6</value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">true</Boolean>
+              <value name="modelType">Basic</value>
+              <value name="isDynamic">true</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Secret Key</value>
+              <value name="propertyKey">aws.secretKey</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">true</value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">true</Boolean>
+              <value name="modelType">Basic</value>
+              <value name="isDynamic">true</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">Region</value>
+              <value name="propertyKey">aws.region</value>
+              <value name="defaultValue"></value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">us-west-2</value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Basic</value>
+              <value name="isDynamic">true</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="displayName">URL Style</value>
+              <value name="propertyKey">cx.aws_s3_url_style</value>
+              <value name="defaultValue">Virtual Hosted</value>
+              <value name="isEncrypted">false</value>
+              <value name="propertyValue">Virtual Hosted</value>
+              <value name="schemaType">string</value>
+              <Boolean name="isHidden">false</Boolean>
+              <Boolean name="isRequired">false</Boolean>
+              <value name="modelType">Basic</value>
+              <array name="allowedValues" type="value" depth="1">
+                <value>Virtual Hosted</value>
+                <value>Path</value>
+              </array>
+              <value name="isDynamic">false</value>
+            </record>
+          </array>
+        </record>
+      </array>
+      <record name="requestProcessing" javaclass="com.wm.util.Values">
+        <null name="messageFormatterType"/>
+        <null name="builderType"/>
+      </record>
+      <record name="responseProcessing" javaclass="com.wm.util.Values">
+        <null name="messageFormatterType"/>
+        <null name="builderType"/>
+      </record>
+      <null name="method"/>
+      <null name="path"/>
+      <value name="restSignatureStyle">WITH_DOCUMENT_ROOT</value>
+      <record name="partsContainer" javaclass="com.wm.util.Values">
+        <array name="parts" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </record>
+</Values>
